@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Amigo Pet</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Clínica Veterinária Amigo Pet</h1>
+    </header>
+
+    <main>
+        <section class="cartao">
+            <h2>Agendamento de Consulta</h2>
+            
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400" 
+                 class="foto-destaque" 
+                 alt="Dois cachorros sorrindo lado a lado enquanto correm em um gramado verde">
+            
+            <p>Cuide da saúde do seu melhor amigo com carinho.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nome-tutor">Nome do Tutor:</label>
+                    <input type="text" id="nome-tutor" name="nome_tutor" required minlength="3" aria-describedby="ajuda-nome">
+                    <small id="ajuda-nome">Digite o nome completo do responsável.</small>
+                </div>
+
+                <div>
+                    <label for="email-contato">E-mail para Contato:</label>
+                    <input type="email" id="email-contato" name="email_contato" required>
+                </div>
+
+                <fieldset>
+                    <legend>Espécie do Animal:</legend>
+                    <input type="radio" id="cachorro" name="especie" value="cachorro">
+                    <label for="cachorro">Cachorro</label>
+
+                    <input type="radio" id="gato" name="especie" value="gato">
+                    <label for="gato">Gato</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serviços Desejados:</legend>
+                    <input type="checkbox" id="vacinacao" name="servicos" value="vacinacao">
+                    <label for="vacinacao">Vacinação</label>
+
+                    <input type="checkbox" id="banho-tosa" name="servicos" value="banho_tosa">
+                    <label for="banho-tosa">Banho e Tosa</label>
+                </fieldset>
+
+                <button type="submit" aria-label="Confirmar agendamento da consulta veterinária">
+                    Agendar Consulta
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Clínica Amigo Pet - Atendimento Acessível 2026</p>
+    </footer>
+
+</body>
+</html>
